@@ -1,13 +1,26 @@
 *{margin: 0px; padding: 0px}
 
 .wrapper{width:100%;}
-#icon1{display: block; position: absolute; left: 60px; top: 15px; border-right: 1px solid rgba(216, 214, 212, 0.74); height: 50px;}
-#icon2{display: block; position: absolute; left:390px; top: 18px; height: 46px;}
+#icon1{ position: absolute; left: 60px; top: 15px; border-right: 1px solid rgba(216, 214, 212, 0.74); height: 50px;}
+#icon2{ position: absolute; left:390px; top: 18px; height: 46px;}
+#icon3{position: absolute; left: 60px; top: 15px; height: 50px; display: none;}
+#icon4{position: absolute; left:160px; top: 18px; height: 46px; display: none}
 .navbar{position: relative; height: 80px; background-color: #0f1680;  margin: 0 auto;}
-.navbar ul{position: absolute; right: 0px; top: 45px;}
-.navbar li{display: inline-block; list-style: none; font-family: "Microsoft YaHei UI"; color: white; padding: 0px 15px;}
+.navbar>ul{position: absolute; right: 0px; top: 45px;}
+.navbar>ul>li{display: inline-block; list-style: none; font-family: "Microsoft YaHei UI"; color: white; padding: 0px 15px;}
 /*这里用inline-block，只需要把ul设置成absolute就可以撑开父亲元素*/
-.navbar li:nth-child(n+2){ border-left: 1px solid white}
+.navbar .ul2{
+    position: absolute;
+    height: 30px;width: 30px;
+    border-radius: 30px;
+    background-color: black;
+    right: 20px;
+    top : 18px;
+    display: none;
+}
+.ul2>ul{list-style: none; width: 40px; position: absolute; top: 30px;}
+
+.navbar>ul>li:nth-child(n+2){ border-left: 1px solid white}
 .carousel { margin: 0 auto;}
 .carousel img{width: 100%; margin: 0 auto;}
 .topHr{height: 8px; margin: 0 auto;
@@ -43,17 +56,33 @@
 .section1Content{}
 .section1Content>div{width: 33.333%; float: left}
 
+@media screen and (max-width: 1250px) and (min-width: 1141px) {
+    .navbar>ul>li{padding: 0px 8px;}
+}
+
+@media screen and (max-width: 1140px) and (min-width: 1001px) {
+    #icon1,#icon2{display: none;}
+    #icon3,#icon4{display: block;}
+}
+
 @media screen and (max-width: 1000px) and (min-width: 640px) {
     .section1Content>div{width: 100%;}
     .section1Content .news,
     .section1Content .notice{width: 50%;}
-    .section1Top li{font-size: 1em;}
-    .section1Top li:nth-child(n+2)::before{height:4px; width:4px; top: 9px;}
+    .section1Top>ul>li{font-size: 1em;}
+    .section1Top>ul>li:nth-child(n+2)::before{height:4px; width:4px; top: 9px;}
+    #icon1,#icon2{display: none;}
+    #icon3,#icon4{display: block;}
 }
+
 @media screen and (max-width: 639px) {
     .section1Content>div{width: 100%;}
     .section1Top li{font-size: .5em;}
     .section1Top li:nth-child(n+2)::before{height:2px; width:2px; top: 7px;}
+    #icon1,#icon2{display: none;}
+    #icon3,#icon4{display: block;}
+    .navbar ul{display: none}
+    .navbar .ul2{display: block}
 }
 
 .sidebar{

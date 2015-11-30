@@ -15,6 +15,8 @@
             <div class="navbar">
                 <img id="icon1" src="images/图标.png">
                 <img id="icon2" src="images/图标2.png">
+                <img id="icon3" src="images/预校团徽.png">
+                <img id="icon4" src="images/培训校徽.png">
                 <ul>
                     <li>概况</li>
                     <li>机构</li>
@@ -24,6 +26,17 @@
                     <li>专题</li>
                     <li>制度</li>
                 </ul>
+                <div class="ul2" id="ul2">
+                    <ul>
+                        <li>概况</li>
+                        <li>机构</li>
+                        <li>师资</li>
+                        <li>教学</li>
+                        <li>留学</li>
+                        <li>专题</li>
+                        <li>制度</li>
+                    </ul>
+                </div>
             </div>
             <div class="topHr"></div>
             <div class="bottomHr"></div>
@@ -155,4 +168,15 @@
         </div>
     </div>
 </body>
+<script>
+    window.onload = function(){
+        var ul2 = document.getElementById("ul2");
+        ul2.onmouseover = function(){
+            ul2.children[0].style.cssText = "display:block";
+        }
+        ul2.onmouseout = function(){
+            ul2.children[0].style.cssText = "display:none";
+        }
+    }
+</script>
 </html>
