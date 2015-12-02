@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <title>东北师范大学留日预校</title>
     <link href="css/base.css" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width,scale=initial-scale">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
-<style>
-
-</style>
 <body>
     <div class="wrapper">
         <div class="nav">
@@ -26,7 +24,7 @@
                     <li>专题</li>
                     <li>制度</li>
                 </ul>
-                <div class="ul2" id="ul2">
+                <div id="ul2"><i class="fa fa-bars fa-3x ul2"></i>
                     <ul>
                         <li>概况</li>
                         <li>机构</li>
@@ -138,9 +136,25 @@
             <div style="clear: both"></div>
         </div>
         <div class="section2">
-            <img src="images/carousel.jpg">
-            <div class="signup"></div>
-            <div class="student"></div>
+            <img src="images/球.png">
+            <div class="signup">
+                <div class="signupTop"><p>培训报名</p></div>
+                <div class="block">项目介绍</div>
+                <div class="block">招生简章<br><span>ENROLMENT INFORMATION</span></div>
+                <div class="block">网上报名<br><span>ENROLMENT PROCEDURE</span></div>
+                <div class="block">报道流程<br><span>ONLINE REGISTRATION</span></div>
+                <div class="block">答疑解惑<br><span>QUESTION & ANSWERS</span></div>
+                <div class="block">生活信息<br><span>LIFE INFORMATION</span></div>
+            </div>
+            <div class="student">
+                <div class="signupTop"><p>培训报名</p></div>
+                <div class="block">项目介绍</div>
+                <div class="block">招生简章<br><span>ENROLMENT INFORMATION</span></div>
+                <div class="block">网上报名<br><span>ENROLMENT PROCEDURE</span></div>
+                <div class="block">报道流程<br><span>ONLINE REGISTRATION</span></div>
+                <div class="block">答疑解惑<br><span>QUESTION & ANSWERS</span></div>
+                <div class="block">生活信息<br><span>LIFE INFORMATION</span></div>
+            </div>
         </div>
         <div class="section3">
             <div class="asso">校友会组织机构</div>
@@ -161,10 +175,78 @@
                                 <div class="title">留日预校（培训部）</div>
                                 <div class="date">2015-09-10</div>
                             </div>
+                            <div class="item">
+                                <div class="title">留日预校（培训部）</div>
+                                <div class="date">2015-09-10</div>
+                            </div>
+                            <div class="item">
+                                <div class="title">留日预校（培训部）</div>
+                                <div class="date">2015-09-10</div>
+                            </div>
+                            <div class="item">
+                                <div class="title">留日预校（培训部）</div>
+                                <div class="date">2015-09-10</div>
+                            </div>
+                            <div class="item">
+                                <div class="title">留日预校（培训部）</div>
+                                <div class="date">2015-09-10</div>
+                            </div>
+                            <div class="item">
+                                <div class="title">留日预校（培训部）</div>
+                                <div class="date">2015-09-10</div>
+                            </div>
+                            <div class="item">
+                                <div class="title">留日预校（培训部）</div>
+                                <div class="date">2015-09-10</div>
+                            </div>
+                            <div class="item">
+                                <div class="title">留日预校（培训部）</div>
+                                <div class="date">2015-09-10</div>
+                            </div>
+                            <div class="item">
+                                <div class="title">留日预校（培训部）</div>
+                                <div class="date">2015-09-10</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="section4">
+            <img src="images/校友之窗.jpg">
+            <div class="links">
+                <div class="link">
+                    <p>友情链接：</p>
+                </div><div class="link">
+                    <p>中华人民共和国教育部</p>
+                </div><div class="link">
+                    <p>国家留学基金管理委员会</p>
+                </div><div class="link">
+                    <p>东北师范大学官网</p>
+                </div><div class="link">
+                    <p>日本井冈山大学</p>
+                </div><div class="link">
+                    <p>日本神户亲和女子学院</p>
+                </div><div class="link">
+                    <p>东京工业大学</p>
+                </div><div class="link">
+                    <p>日本樱美林大学</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li>版权所有© &nbsp; 东北师范大学计算机科学与信息技术学院 &nbsp;地址：吉林省长春市净月大街2555号 &nbsp;邮编：130000</li>
+                <hr style="height:1px;border:none;border-top:1px solid #CCCCCC; width:580px; margin:5px auto;" />
+                <li> 网站制作与维护：计算机科学与信息技术系 &nbsp;电话：0431-5555555 &nbsp;：传真：0431-5555555 &nbsp;访问统计：
+                    <div class="count">00001</div>
+                </li>
+            </ul>
+            <div class="topHr"></div>
+            <div class="footerimg">
+                <img src="images/foot.jpg">
+            </div>
+
         </div>
     </div>
 </body>
@@ -172,10 +254,10 @@
     window.onload = function(){
         var ul2 = document.getElementById("ul2");
         ul2.onmouseover = function(){
-            ul2.children[0].style.cssText = "display:block";
+            ul2.children[1].style.cssText = "display:block";
         }
         ul2.onmouseout = function(){
-            ul2.children[0].style.cssText = "display:none";
+            ul2.children[1].style.cssText = "display:none";
         }
     }
 </script>
