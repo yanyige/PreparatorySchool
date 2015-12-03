@@ -1,4 +1,4 @@
-*{margin: 0px; padding: 0px}
+*{margin: 0px; padding: 0px;}
 
 .wrapper{width:100%;}
 #icon1{ position: absolute; left: 60px; top: 15px; border-right: 1px solid rgba(216, 214, 212, 0.74); height: 50px;}
@@ -8,15 +8,13 @@
 .navbar{position: relative; height: 80px; background-color: #0f1680;  margin: 0 auto;}
 .navbar>ul{position: absolute; right: 0px; top: 45px;}
 .navbar>ul>li{display: inline-block; list-style: none; font-family: "Microsoft YaHei UI"; color: white; padding: 0px 15px;}
+.navbar>a{display: none;}
+.hide{display: none;}
 /*这里用inline-block，只需要把ul设置成absolute就可以撑开父亲元素*/
-.navbar #ul2{
-    position: absolute;
-    right: 20px;
-    top : 18px;
-    display: none;
+
+#nav-switch{width: 30px;  height: 30px;  position: absolute;  right: 30px;  top: 60%;  margin-top: -15px;
+    background: url(../images/icons.png) no-repeat -24px -64px;
 }
-#ul2>ul{list-style: none; width: 40px; position: absolute; top: 65px;}
-#ul2>ul>li{padding: 5px 0px}
 
 .navbar>ul>li:nth-child(n+2){ border-left: 1px solid white}
 .carousel { margin: 0 auto;}
@@ -71,6 +69,10 @@
     .section1Top>ul>li:nth-child(n+2)::before{height:4px; width:4px; top: 9px;}
     #icon1,#icon2{display: none;}
     #icon3,#icon4{display: block;}
+    .academic>.sidebar{width:10%;}
+    .academic>.content{width:90%;}
+    .hide{display: block}
+    .hide1{display: none}
 }
 
 @media screen and (max-width: 719px) {
@@ -79,8 +81,26 @@
     .section1Top li:nth-child(n+2)::before{height:2px; width:2px; top: 7px;}
     #icon1,#icon2{display: none;}
     #icon3,#icon4{display: block;}
-    .navbar ul{display: none}
-    .navbar #ul2{display: block}
+    .navbar>ul {
+        position: absolute;
+        top: 111%;
+        width: 100%;
+        text-align: center;
+        font-size: 21px;
+    }
+    .navbar>ul>li {
+        display: block;
+        list-style: none;
+        font-family: "Microsoft YaHei UI";
+        color: white;
+        padding: 10px 15px;
+        background-color: rgba(7,7,7,0.8);
+        border-bottom: 1px #555 solid;
+    }
+    .navbar>ul{display: none;}
+    .navbar>a{display: block;}
+    .hide{display: block}
+    .hide1{display: none}
 }
 
 .sidebar{
@@ -115,7 +135,7 @@
 .item{height: 24px; width: 80%; margin-bottom: 3px; position: relative}
 
 .section2{position: relative}
-.section2 img{margin: 40px auto; width: 80%; display: block}
+.section2>img{margin: 40px auto; width: 80%; display: block}
 
 .section2>*:not(img){position: absolute; width: 29%; top: 8%; height: 55%}
 
@@ -123,15 +143,11 @@
 /*.student{background-color: blueviolet; left: 55%;}*/
 .signup{left: 23%; }
 .student{left: 55%;}
-.signupTop{text-align: center;}
-.signupTop>p{font-size: 20px; font-family: "Microsoft YaHei UI";}
-.signup>.block{width: 33.33%; float: left; padding:3% 0px; font-family: "Microsoft YaHei UI";}
-.signup>.block>span{font-size: 9px;  -webkit-transform: scale(.3); -o-transform: scale(.3); }
+.signupTop{text-align: center; font-family: "Microsoft YaHei UI";}
+.signupTop>p{font-size: 20px;}
+.signup>.block{width: 33.33%; float: left; padding:3% 0px;}
+.student>.block{width: 33.33%; float: left; padding:3% 0px;}
 
-.signupTop{text-align: center;}
-.signupTop>p{font-size: 20px; font-family: "Microsoft YaHei UI";}
-.student>.block{width: 33.33%; float: left; padding:3% 0px; font-family: "Microsoft YaHei UI";}
-.student>.block>span{font-size: 9px;  -webkit-transform: scale(.3); -o-transform: scale(.3); }
 
 .section3{
     overflow: hidden;
@@ -144,7 +160,7 @@
 .culture{float: right}
 
 .section3Content>.people,
-.section3Content>.communicate{width: 49.9%}
+.section3Content>.communicate{width: 49.9%; padding: 30px 0px;}
 .people{float: left;}
 .communicate{float: right; position: relative}
 .main>.content{width: 95%; margin: 0 auto;}
@@ -153,14 +169,25 @@
 .section4{width: 80%; margin: 0 auto;}
 .section4>img{display: block; width: 100%;}
 .links{margin: 40px 0px; text-align: center}
-.link{padding: 0px 20px; display: inline-block; font-size: 1px;}
+.link{padding: 0px 10px; display: inline-block; font-size: 1px;}
 
 .footer{
     text-align: center;
     font-size: 12px;
     color: cornflowerblue;
+    background-color: #edfaf8;
+}
+.footerimg>img{
+    width: 100%;
 }
 .footer>ul{
-    padding: 0px 0px 30px 0px;
-    background-color: #edfaf8;
+    padding: 30px 0px 30px 0px;
+    line-height: 30px;
+}
+
+.language>ul>li{
+
+    display: inline-block;
+    font-size: 20px;
+    padding: 0px 18px 30px;
 }
