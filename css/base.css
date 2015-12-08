@@ -52,56 +52,7 @@
 .section1Content{}
 .section1Content>div{width: 33.333%; float: left}
 
-@media screen and (max-width: 1250px) and (min-width: 1141px) {
-    .navbar>ul>li{padding: 0px 8px;}
-}
 
-@media screen and (max-width: 1140px) and (min-width: 1001px) {
-    #icon1,#icon2{display: none;}
-    #icon3,#icon4{display: block;}
-}
-
-@media screen and (max-width: 1000px) and (min-width: 720px) {
-    .section1Content>div{width: 100%;}
-    .section1Content .news,
-    .section1Content .notice{width: 50%;}
-    .section1Top>ul>li{font-size: 1em;}
-    .section1Top>ul>li:nth-child(n+2)::before{height:4px; width:4px; top: 9px;}
-    #icon1,#icon2{display: none;}
-    #icon3,#icon4{display: block;}
-    .academic>.sidebar{width:10%;}
-    .academic>.content{width:90%;}
-    .hide{display: block}
-    .hide1{display: none}
-}
-
-@media screen and (max-width: 719px) {
-    .section1Content>div{width: 100%;}
-    .section1Top li{font-size: .5em;}
-    .section1Top li:nth-child(n+2)::before{height:2px; width:2px; top: 7px;}
-    #icon1,#icon2{display: none;}
-    #icon3,#icon4{display: block;}
-    .navbar>ul {
-        position: absolute;
-        top: 111%;
-        width: 100%;
-        text-align: center;
-        font-size: 21px;
-    }
-    .navbar>ul>li {
-        display: block;
-        list-style: none;
-        font-family: "Microsoft YaHei UI";
-        color: white;
-        padding: 10px 15px;
-        background-color: rgba(7,7,7,0.8);
-        border-bottom: 1px #555 solid;
-    }
-    .navbar>ul{display: none;}
-    .navbar>a{display: block;}
-    .hide{display: block}
-    .hide1{display: none}
-}
 
 .sidebar{
     float: left;
@@ -190,4 +141,58 @@
     display: inline-block;
     font-size: 20px;
     padding: 0px 18px 30px;
+}
+
+@media screen and (max-width: 1250px) and (min-width: 1141px) {
+    .navbar>ul>li{padding: 0px 8px;}
+}
+
+@media screen and (max-width: 1140px) and (min-width: 1001px) {
+    #icon1,#icon2{display: none;}
+    #icon3,#icon4{display: block;}
+    .section1,.section2>img,.section3,.section4{width: 90%;}
+  /*   .hide{display: block}
+  .hide1{display: none} */
+}
+
+@media screen and (max-width: 1000px) and (min-width: 720px) {
+    .section1Content>div{width: 100%;}
+    .section1Content .news,
+    .section1Content .notice{width: 50%;}
+    .section1Top>ul>li{font-size: 1em;}
+    .section1Top>ul>li:nth-child(n+2)::before{height:4px; width:4px; top: 9px;}
+    #icon1,#icon2{display: none;}
+    #icon3,#icon4{display: block;}
+    .academic>.sidebar{width:10%;}
+    .academic>.content{width:90%;}
+    .hide{display: block}
+    .hide1{display: none}
+}
+
+@media screen and (max-width: 719px) {
+    .section1Content>div{width: 100%;}
+    .section1Top li{font-size: .5em;}
+    .section1Top li:nth-child(n+2)::before{height:2px; width:2px; top: 7px;}
+    #icon1,#icon2{display: none;}
+    #icon3,#icon4{display: block;}
+    .navbar>ul {
+        position: absolute;
+        top: 111%;
+        width: 100%;
+        text-align: center;
+        font-size: 21px;
+    }
+    .navbar>ul>li {
+        display: block;
+        list-style: none;
+        font-family: "Microsoft YaHei UI";
+        color: white;
+        padding: 10px 15px;
+        background-color: rgba(7,7,7,0.8);
+        border-bottom: 1px #555 solid;
+    }
+    .navbar>ul{display: none;}
+    .navbar>a{display: block;}
+    .hide{display: block}
+    .hide1{display: none}
 }
