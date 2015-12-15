@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>东北师范大学留日预校</title>
+    <link href="css/sec.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="inner-wrapper">
+            <div class="header">
+                <div class="headerContent"><img src="images/headIcon.png" alt="header"></div>
+            </div>
+            <div class="content">
+                <div class="right-panel">
+                    <div class="panel-head">
+                        <div class="b-l"></div>
+                        <div class="b-r">新闻快讯</div>
+                    </div>
+                </div>
+                <img src="images/培训报名.png">
+                <div class="inner-panel">
+                    <div class="panel-head">
+                        <div class="b-l"></div>
+                        <div class="b-r">新闻快讯</div>
+                    </div>
+                    <div class="main-panel">
+                        <div class="b-l"></div>
+                        <div class="b-m">学院概况</div>
+                        <div class="b-r">&gt;</div>
+                    </div>
+                    <div class="main-panel">
+                        <div class="b-l"></div>
+                        <div class="b-m">新闻快讯</div>
+                        <div class="b-r"><span>&gt;</span></div>
+                        <div class="cpanel">
+                            <div class="b-l"></div>
+                            <div class="b-r">学校新闻</div>
+                        </div>
+                        <div class="cpanel">
+                            <div class="b-l"></div>
+                            <div class="b-r">学校公告</div>
+                        </div>
+                    </div>
+                    <div class="main-panel">
+                        <div class="b-l"></div>
+                        <div class="b-m">精品课程</div>
+                        <div class="b-r">&gt;</div>
+                    </div>
+                    <div class="main-panel">
+                        <div class="b-l"></div>
+                        <div class="b-m">远程教学</div>
+                        <div class="b-r">&gt;</div>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="main-content-nav">
+                        <ul>
+                            <li>首页</li>
+                            <li>新闻快讯</li>
+                            <li>学校新闻</li>
+                        </ul>
+                    </div>
+                    <div class="main-content-c">
+                        <div class="c-head">
+                            <p>学校新闻</p>
+                        </div>
+                        <hr>
+                        <div class="c-c">
+                            <div class="item">
+                                <div class="ic"></div>
+                                <div class="title">留日预校（培训部）</div>
+                                <div class="date">2015-09-10</div>
+                            </div>
+                            <div class="item">
+                                <div class="ic"></div>
+                                <div class="title">留日预校（培训部）</div>
+                                <div class="date">2015-09-10</div>
+                            </div>
+                            <div class="item">
+                                <div class="ic"></div>
+                                <div class="title">留日预校（培训部）</div>
+                                <div class="date">2015-09-10</div>
+                            </div>
+                            <div class="item">
+                                <div class="ic"></div>
+                                <div class="title">留日预校（培训部）</div>
+                                <div class="date">2015-09-10</div>
+                            </div>
+                            <div class="item">
+                                <div class="ic"></div>
+                                <div class="title">留日预校（培训部）</div>
+                                <div class="date">2015-09-10</div>
+                            </div>
+                            <div class="item">
+                                <div class="ic"></div>
+                                <div class="title">留日预校（培训部）</div>
+                                <div class="date">2015-09-10</div>
+                            </div>
+                            <div class="item">
+                                <div class="ic"></div>
+                                <div class="title">留日预校（培训部）</div>
+                                <div class="date">2015-09-10</div>
+                            </div>
+                            <div class="item">
+                                <span>共45条记录，3页，每页15条</span>
+                                <div class="pagination">
+                                    <ul>
+                                        <li class="prev">上一页</li>
+                                        <li class="page">1</li>
+                                        <li class="page">2</li>
+                                        <li class="page">3</li>
+                                        <li class="next">下一页</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</body>
+<script>
+    window.onload = function(){
+        var mainPanels = document.getElementsByClassName("main-panel");
+
+        for(var i in mainPanels){
+            mainPanels[i].onclick = function(){
+                var re = /focus/;
+                if(!re.test(this.className)) {
+                    this.className = this.className + " focus";
+                    for (var j in this.children) {
+                        //                    this.children[j].style.display = "block";
+                        if (this.children[j].className == "cpanel") {
+                            this.children[j].style.display = "block";
+                        }
+                    }
+                }else{
+                    this.className = "main-panel";
+                    for (var j in this.children) {
+                        //                    this.children[j].style.display = "block";
+                        if (this.children[j].className == "cpanel") {
+                            this.children[j].style.display = "none";
+                        }
+                    }
+                }
+            }
+        }
+    }
+</script>
+</html>
