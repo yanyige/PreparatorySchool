@@ -89,6 +89,15 @@
     font-size: 24px;
     text-align: center;
 }
+
+.right-inner>.main-panel>.b-r{
+    width:26px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 15px;
+    text-align: center;
+}
+
 .focus{
     /*position: relative;*/
     border-left: 7px solid rgb(131 , 225 , 252);
