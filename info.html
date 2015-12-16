@@ -13,9 +13,26 @@
             </div>
             <div class="content">
                 <div class="right-panel">
-                    <div class="panel-head">
-                        <div class="b-l"></div>
-                        <div class="b-r">新闻快讯</div>
+                    <div class="right-inner">
+                        <div class="panel-head">
+                            <div class="b-l"></div>
+                            <div class="b-r">相关链接</div>
+                        </div>
+                        <div class="main-panel">
+                            <div class="b-l"></div>
+                            <div class="b-m">教&emsp;务&emsp;处</div>
+                            <div class="b-r">&gt;</div>
+                        </div>
+                        <div class="main-panel">
+                            <div class="b-l"></div>
+                            <div class="b-m">学&nbsp;员&nbsp;公&nbsp;告</div>
+                            <div class="b-r">&gt;</div>
+                        </div>
+                        <div class="main-panel">
+                            <div class="b-l"></div>
+                            <div class="b-m">日本各大学网址</div>
+                            <div class="b-r">&gt;</div>
+                        </div>
                     </div>
                 </div>
                 <img src="images/培训报名.png">
@@ -35,7 +52,7 @@
                         <div class="b-r"><span>&gt;</span></div>
                         <div class="cpanel">
                             <div class="b-l"></div>
-                            <div class="b-r">学校新闻</div>
+                            <div class="b-r" style="color: #77b3db;">学校新闻</div>
                         </div>
                         <div class="cpanel">
                             <div class="b-l"></div>
@@ -119,7 +136,17 @@
                 </div>
 
             </div>
-
+            <div class="footer">
+                <ul>
+                    <li>概况</li>
+                    <li>机构</li>
+                    <li>师资</li>
+                    <li>教学</li>
+                    <li>留学</li>
+                    <li>专题</li>
+                    <li>制度</li>
+                </ul>
+            </div>
 
         </div>
     </div>
@@ -150,6 +177,11 @@
                 }
             }
         }
+        var wrapper = document.getElementsByClassName("wrapper");
+        var innerWrapper = document.getElementsByClassName("inner-wrapper");
+        console.log(wrapper[0].offsetHeight);
+        console.log(innerWrapper[0].offsetHeight);
+        wrapper[0].style.height =innerWrapper[0].offsetHeight + 56 + "px";
     }
 </script>
 </html>

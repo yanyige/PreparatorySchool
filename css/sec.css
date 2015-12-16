@@ -37,7 +37,7 @@
     background-color: white;
     padding-left: 15px;
     position: absolute;
-    box-shadow: 1px 0px 10px rgba(0,0,0,.4);
+    box-shadow: 1px 0px 10px rgba(0,0,0,.2);
 }
 
 .panel-head{
@@ -55,6 +55,15 @@
     vertical-align: middle;
     font-size: 24px;
     font-family: "Microsoft YaHei UI";
+}
+.login-panel{
+    padding: 25px 0;
+}
+.login-panel label{
+    margin-left: 25px;
+}
+.login-panel input{
+    margin-left: 20px;
 }
 
 .main-panel{
@@ -88,6 +97,16 @@
 }
 .focus>.b-m{
     color: #77b3db;
+}
+.yanzheng>label{
+    margin-left: 37px;
+    font-size: 12px;
+}
+#mysubmit{
+    margin-left: 98px;
+}
+#forget{
+    margin-left: 30px;
 }
 
 
@@ -167,16 +186,43 @@
     background-color: white;
     padding: 5px 4px 0 0;
     position: absolute;
-    box-shadow: 5px -3px 8px rgba(0,0,0,.4);
-    height: 280px;
+    box-shadow: 1px 0px 10px rgba(0,0,0,.2);
     right: 0px;
+    font-family: "Microsoft YaHei UI";
 }
-.right-panel>.panel
-.right-panel>.panel-head>.b-l{
-    height: 88px;
+.right-inner{;
+    box-shadow: 1px -1px 5px rgba(0,0,0,.2);
+}
+.right-panel>.right-inner>.panel-head{
+    height:100px;
     border-bottom: 1px solid gray
 }
 
+.right-panel>.right-inner>.panel-head{
+    height:100px;
+    border-bottom: 1px solid gray
+}
+.right-panel>.right-inner>.main-panel{
+    height: 59px;
+    border-bottom: 1px solid gray
+}
+
+.right-panel>.right-inner>.main-panel>.b-l{
+    width:26px; height: 59px;
+    display: table-cell;
+}
+.right-panel>.right-inner>.main-panel>.b-m{
+    display: table-cell;
+    width:140px; height: 59px;
+    vertical-align: middle;
+    font-family: "Microsoft YaHei UI";
+    border-right: 0px;
+}
+
+.footer{text-align: center; padding: 45px 0px;}
+.footer>ul{display: inline-block; margin: 0 auto;}
+.footer>ul>li{display: inline-block; list-style: none; font-family: "Microsoft YaHei UI"; padding: 0px 15px;}
+.footer>ul>li:nth-child(n+2){ border-left: 1px solid #546260}
 
 
 
