@@ -111,10 +111,25 @@
     margin-left: 37px;
     font-size: 12px;
 }
+
+.myinput{
+    height: 20px;
+}
+.username,.password,.yanzheng{
+    line-height: 35px;
+}
+.btn{
+    font-size: 15px;
+    display: inline-block;
+    padding: 1px;
+    border: 1px solid black;
+    height: 20px;
+}
 #mysubmit{
     margin-left: 98px;
 }
 #forget{
+    width: 62px;
     margin-left: 30px;
 }
 
