@@ -11,7 +11,6 @@
 }
 
 .header{
-
     background-color: #dcdcdc;
 }
 .headerContent{
@@ -174,11 +173,70 @@
     list-style: none;
     display: inline-block;
 }
+.main-content-c{
+    min-height: 356px;
+}
 .c-head{
     padding-bottom: 30px;
 }
+.c-article{
+    margin-top: 10px;
+}
+.article-title{
+    font-family: 'Microsoft YaHei',Verdana,Arial,Helvetica,sans-serif;
+    line-height: 28px;
+    padding-bottom: 8px;
+    font-size: 21px;
+    color: #0066cc;
+    font-weight: normal;
+    text-align: center;
+}
+.article-info{
+    text-indent: 2em;
+    line-height: 1.7;
+    font-size: 15px;
+    color: #333333;
+    font-family: "Microsoft YaHei"!important;
+    text-align: center;
+}
 .c-c{
     padding: 30px 0;
+}
+.leader-category>hr{
+    margin: 0 10px;
+}
+.leader-list{
+    padding: 10px;
+}
+#list-wrapper{
+    position: relative;
+}
+.category{
+    color: #0066cc;
+    font-weight: normal;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family:微软雅黑, 'microsoft yahei';
+}
+.category::before{
+    content:"";
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    background-color: #0066cc;
+    position: relative;
+    float: left;
+    top: 12px;
+    left: -6px;
+}
+.lblock{
+    float: left;
+    padding: 15px 0 0 15px;
+}
+.lblock>p{
+    text-align: center;
 }
 .ic{height: 8px; width: 8px; border-radius: 50%; background-color: #6976f2; margin: 18px 0; float: left}
 .title{
@@ -248,7 +306,19 @@
 .footer>ul>li{display: inline-block; list-style: none; font-family: "Microsoft YaHei UI"; padding: 0px 15px;}
 .footer>ul>li:nth-child(n+2){ border-left: 1px solid #546260}
 
+.b-m{
+    cursor: pointer;
+}
+.b-r>.on{
+    color: #77b3db;
+}
 
+.inner-panel a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-family: "Microsoft YaHei UI";
+}
 
 
 @media screen and (max-width: 1367px){
